@@ -1,0 +1,13 @@
+{
+    "Cmd": [
+        "bash",
+        "-c",
+        "source /root/catkin_ws/devel/setup.bash && source /root/catkin_ws/src/panda_demonstrator/venv/bin/activate && roslaunch panda_demonstrator step1.launch"
+      ],
+      "Hostconfig": {
+        "Binds": ["/tmp/.X11-unix:/tmp/.X11-unix:rw"],
+        "AutoRemove": true,
+        "Runtime": "nvidia"
+      },
+      "Env": ["QT_X11_NO_MITSHM=1", "DISPLAY=:0"]
+}
